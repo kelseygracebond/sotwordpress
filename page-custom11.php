@@ -11,28 +11,7 @@ Template Name: Events Page
 				<div id="inner-content" class="wrap clearfix">
 
 						<div id="main" class="eightcol first clearfix" role="main">
-                        
-                        <?php // The Query
-
-						$query = new WP_Query( $args );
-
-						// The Loop
-						
-						if ( $query->have_posts() ) {
-							
-							while ( $query->have_posts() ) {
-								
-								$query->the_post();
-								
-								echo '<li>' . get_the_title() . '</li>';
-							}
-						} else {
-							// no posts found
-						}
-						/* Restore original Post Data */
-						
-						wp_reset_postdata(); ?>
-												
+                        												
 							<?php if (have_posts() ) while (have_posts() ) : the_post(); ?>
                             
                             <h1><?php the_field('page_heading'); ?> </h1>
@@ -45,6 +24,20 @@ Template Name: Events Page
                             
                             <?php endwhile;?>
                             
+								<?php
+                                global $more;
+                                $more = 0;
+                                query_posts('cat=11');
+                                if(have_posts()) :
+                                while(have_posts()) :the_post();
+                                ?>
+                                <h2><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h2>
+                                <div><?php the_content('Read More') ?></div>
+                                <?php
+                                endwhile;
+                                endif;
+                                wp_reset_query();?>
+                                                            
                 </div> <!-- end #inner-content -->
 
             </div> <!-- end #content -->

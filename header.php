@@ -37,25 +37,37 @@
 		<!-- drop Google Analytics Here -->
 		<!-- end analytics -->
 
+    	<link href="style.css" rel="stylesheet" type="text/css">
+        
 	</head>
 
 	<body <?php body_class(); ?>>
 
 		<div id="container">
 
-			<header class="header" role="banner">
+			<center>
+            
+            <header class="header" role="banner">
 
 				<div id="inner-header" class="wrap clearfix">
+                    
+                    <ul><?php if ( is_single() || is_home() ) { echo 'class="current_page_item"'; } ?><a href="<?php echo bloginfo('url'); ?>">events</a>
+                    
+                    <a href="http://localhost/standouttalent/category/about">about</a>
+                    
+                    <a href="index.php"><img src="<?php echo get_template_directory_uri();?>/images/logo.png" style="height:120px;"/></a>
 
-    <a href="index.php"><img src="<?php echo get_template_directory_uri();?>/images/logo.png" style="height:150px;"/></a>
-    <a href="https://www.facebook.com/StandOutTalent.Org" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/fb.png" style="height:30px;"/></a>
-    <a href="https://twitter.com/StandOutTalent" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/tw.png" style="height:30px;"/></a>    
-
-
-					<nav role="navigation">
-						<?php bones_main_nav(); ?>
-					</nav>
-
+                    <a href="http://localhost/standouttalent/category/support">support</a>
+                    
+                    <a href="http://localhost/standouttalent/category/blog">blog</a>
+                   
+                    
+                     <a href="https://www.facebook.com/StandOutTalent.Org" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/fb.png" style="height:20px;"/></a>
+                     
+    				 <a href="https://twitter.com/StandOutTalent" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/tw.png" style="height:20px;"/></a></ul>
+                        
 				</div> <!-- end #inner-header -->
 
 			</header> <!-- end header -->
+            
+            </center>

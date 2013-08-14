@@ -15,15 +15,7 @@
   max-width: 1024px;
   margin:0 auto; 
   padding: 0 0 0 !important; } }
-
-nav menu ul {
-  margin-top:85px;
-  margin-bottom:0px;
-  text-align: center; }
-
-nav menu ul li {
-  margin: 0 auto;
-  display: block; }
+  
 
 /* CSS classes for your convenience. */
 /* General site margin */
@@ -45,15 +37,10 @@ nav menu ul li {
 .box5 {
 	color:#000; }  
   
-#content {
-	background-color:#888;
-}
-
 .fixed {
 	position:fixed;
 	z-index:9999; 
 	width:100% }
-
 
 /** Responsive CSS **/
 @media (min-width: 1200px) {
@@ -71,10 +58,6 @@ nav menu ul li {
 .container {
     max-width: 320px; }
 
-nav menu ul li {
-    display: block;
-    background: #ddd; } }
-	
 .center {
   text-align: center; }
 
@@ -146,11 +129,7 @@ nav menu ul li {
 	
 .menu-main-navigation-container {
 	width:100%; }
-	
-nav li {
-	display:inline-block;
-	padding:20px; }
-	
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -207,6 +186,9 @@ nav li {
 
 .black {
   color: #000; }
+  
+#header {
+	margin:0 auto; }
 
 /*.w-video {
   background-image: url(../img/noun_project_5068.svg); }
@@ -972,6 +954,7 @@ a:hover, a:focus {
     position: static; } }
 	
 @media (min-width: 768px) and (max-width: 979px) {
+	
   .row {
     margin-left: -20px;
     *zoom: 1; }
