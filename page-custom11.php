@@ -6,9 +6,9 @@ Template Name: Events Page
 
 <?php get_header(); ?>
 
-			<div id="content">
+			<center>
 
-				<div id="inner-content" class="wrap clearfix">
+			<div id="content">
 
 						<div id="main" class="eightcol first clearfix" role="main">
                         												
@@ -38,8 +38,8 @@ Template Name: Events Page
                                 endif;
                                 wp_reset_query();?>
                                                             
-                </div> <!-- end #inner-content -->
-
             </div> <!-- end #content -->
+            
+            </center>
 
 <?php get_footer(); ?>

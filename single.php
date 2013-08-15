@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+			<center>
+
 			<div id="content">
 
 				<div id="inner-content" class="wrap clearfix">
@@ -50,5 +52,7 @@
 				</div> <!-- end #inner-content -->
 
 			</div> <!-- end #content -->
+            
+            </center>
 
 <?php get_footer(); ?>
