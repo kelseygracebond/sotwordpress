@@ -47,8 +47,6 @@
 			<center>
             
             <header class="header" role="banner">
-
-				<div id="inner-header" class="wrap clearfix">
                     
                     <ul><?php if ( is_single() || is_home() ) { echo 'class="current_page_item"'; } ?><a href="<?php echo bloginfo('url'); ?>">events</a>
                     
@@ -58,15 +56,13 @@
 
                     <a href="http://localhost/standouttalent/category/support">support</a>
                     
-                    <a href="http://localhost/standouttalent/category/blog">blog</a>
+                    <a href="http://localhost/standouttalent/category/blog">blog</a></ul>
                    
                     
-                     <a href="https://www.facebook.com/StandOutTalent.Org" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/fb.png" style="height:20px;"/></a>
+                     <div class="icons"><a href="https://www.facebook.com/StandOutTalent.Org" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/fb.png" style="height:20px;"/></a>
                      
-    				 <a href="https://twitter.com/StandOutTalent" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/tw.png" style="height:20px;"/></a></ul>
+    				 <a href="https://twitter.com/StandOutTalent" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/tw.png" style="height:20px;"/></a></div><!--end icons-->
                         
 				</div> <!-- end #inner-header -->
-
-			</header> <!-- end header -->
             
             </center>

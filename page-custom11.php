@@ -4,13 +4,13 @@ Template Name: Events Page
 */
 ?>
 
+<body>
+
 <?php get_header(); ?>
 
 			<center>
 
 			<div id="content">
-
-						<div id="main" class="eightcol first clearfix" role="main">
                         												
 							<?php if (have_posts() ) while (have_posts() ) : the_post(); ?>
                             
@@ -41,5 +41,7 @@ Template Name: Events Page
             </div> <!-- end #content -->
             
             </center>
+            
+            </body>
 
 <?php get_footer(); ?>

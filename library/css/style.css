@@ -1,6 +1,6 @@
 /******************************************************************
-Site Name:
-Author:
+Site Name:Stand Out Talent	
+Author:Booterns
 
 Stylesheet: Main Stylesheet
 
@@ -480,7 +480,8 @@ small,
 }
 ul,
 ol {
-  padding: 0;
+  padding-top:10px;
+  padding-bottom:10px;
   list-style-type: none;
 }
 dd {
@@ -833,7 +834,7 @@ body {
 *********************/
 a,
 a:visited {
-  color: #f01d4f;
+  color: #999;
   /* on hover */
 
   /* on click */
@@ -845,7 +846,7 @@ a:hover,
 a:visited:hover,
 a:focus,
 a:visited:focus {
-  color: #d10e3c;
+  color: #099;
 }
 a:link,
 a:visited:link {
@@ -923,6 +924,17 @@ h5,
 /*********************
 06. HEADER SYTLES
 *********************/
+
+header {
+	width:100%;
+	background-color:#333;
+	margin-top:-16px; }
+	
+.icons {
+	float:right;
+	margin-top:-50px;
+	padding-right:30px; }
+
 /*********************
 07. NAVIGATION STYLES
 *********************/
@@ -953,7 +965,7 @@ and more scalable.
 		*/
 
 }
-.nav li a {
+.nav ul a {
   display: block;
   text-decoration: none;
   padding: 10px 10px;
@@ -971,13 +983,30 @@ and more scalable.
 .nav li ul.children li a {
   padding-left: 30px;
 }
+
+ul a {
+	text-decoration:none;
+	font-family:Arial, Helvetica, sans-serif;
+	padding-right:15px;
+	padding-left:15px;
+	color:#999;
+	text-transform:uppercase;
+	font-size:12px; }
+
 /* end .nav */
 /*********************
 08. POSTS & CONTENT STYLES
 *********************/
 #content {
-  margin-top: 2.2em;
-}
+	margin-top: 2.2em;
+	margin-left:200px;
+	margin-right:200px; }
+
+.content-internal {
+	margin-left:200px;
+ 	margin-right:200px; }
+ 
+
 /* end .hentry */
 /* want to style individual post classes? Booya! */
 /* post by id (i.e. post-3) */
@@ -1611,41 +1640,9 @@ you can add resource intensive styles.
     top: auto;
     display: block;
   }
-  /* end .nav */
-  /*********************
-  SIDEBARS & ASIDES
-  *********************/
-  .sidebar {
-    margin-top: 2.2em;
-  }
-  .widgettitle {
-    border-bottom: 2px solid #444;
-    margin-bottom: 0.75em;
-  }
-  .widget {
-    padding: 0 10px;
-    margin: 2.2em 0;
-  }
-  .widget ul li {
-    margin-bottom: 0.75em;
-    /* deep nesting */
   
-  }
-  .widget ul li ul {
-    margin-top: 0.75em;
-    padding-left: 1em;
-  }
-  /* links widget */
-  /* meta widget */
-  /* pages widget */
-  /* recent-posts widget */
-  /* archives widget */
-  /* tag-cloud widget */
-  /* calendar widget */
-  /* category widget */
-  /* recent-comments widget */
-  /* search widget */
-  /* text widget */
+  /* end .nav */
+
   /*********************
   FOOTER STYLES
   *********************/
@@ -1659,11 +1656,8 @@ you can add resource intensive styles.
   			be careful with the depth of your menus.
   			it's very rare to have multi-depth menus in
   			the footer.
-  			*/
-  
-  }
-  /* end .footer-links */
-}
+  			*/  }
+  /* end .footer-links */ }
 /*
 DESKTOP
 This is the average viewing window. So Desktops, Laptops, and
@@ -1830,5 +1824,4 @@ be set to display none.
   .respond-form,
   nav {
     display: none;
-  }
-}
+  } }
