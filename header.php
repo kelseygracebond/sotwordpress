@@ -21,7 +21,7 @@
 
 		<!-- icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) -->
 		<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/library/images/apple-icon-touch.png">
-		<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
+		<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.png">
 		<!--[if IE]>
 			<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 		<![endif]-->
@@ -47,12 +47,12 @@
 			<center>
             
             <header class="header" role="banner">
-                    
-                    <ul><?php if ( is_single() || is_home() ) { echo 'class="current_page_item"'; } ?><a href="<?php echo bloginfo('url'); ?>">events</a>
+            	
+                    <ul><?php if ( is_single() || is_home() ) ?><a href="<?php echo bloginfo('url'); ?>">events</a>
                     
                     <a href="http://localhost/standouttalent/category/about">about</a>
                     
-                    <a href="index.php"><img src="<?php echo get_template_directory_uri();?>/images/logo.png" style="height:120px;"/></a>
+                    <a href="index.php"><img src="<?php echo get_template_directory_uri();?>/images/logo.png" style="height:100px;"/></a>
 
                     <a href="http://localhost/standouttalent/category/support">support</a>
                     
@@ -62,7 +62,9 @@
                      <div class="icons"><a href="https://www.facebook.com/StandOutTalent.Org" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/fb.png" style="height:20px;"/></a>
                      
     				 <a href="https://twitter.com/StandOutTalent" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/tw.png" style="height:20px;"/></a></div><!--end icons-->
+                     
+                     </div><!--end inner-header-->
                         
-				</div> <!-- end #inner-header -->
+        </div><!--end container-->
             
             </center>
