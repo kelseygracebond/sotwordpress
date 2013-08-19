@@ -778,10 +778,10 @@ body {
 
 }
 body {
-  font-family: "Georgia", Cambria, Times New Roman, Times, serif;
+  font-family:"Chaparral Pro Regular";
   font-size: 100%;
-  line-height: 1.5;
-  color: #565656;
+  line-height: 2;
+  color: #069;
 }
 /********************
 02. WORDPRESS BODY CLASSES
@@ -871,9 +871,10 @@ h4,
 .h4,
 h5,
 .h5 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family:MetaPro-Black;
   text-rendering: optimizelegibility;
-  font-weight: 400;
+  /*font-weight: 400;*/
+  font-size:30px;
   /*
 	if you're going to use webfonts, be sure to check your weights
 	http://css-tricks.com/watch-your-font-weight/
@@ -928,7 +929,9 @@ h5,
 header {
 	width:100%;
 	background-color:#333;
-	margin-top:-16px; }
+	margin-top:-16px; 
+	font-family:MetaPro-Black;
+	font-size:30pts; }
 	
 .icons {
 	float:right;
@@ -986,12 +989,12 @@ and more scalable.
 
 ul a {
 	text-decoration:none;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family:MetaPro-Normal;
 	padding-right:15px;
 	padding-left:15px;
 	color:#999;
 	text-transform:uppercase;
-	font-size:12px; }
+	font-size:14px; }
 
 /* end .nav */
 /*********************
