@@ -1,6 +1,4 @@
 <?php get_header(); ?>
-
-			<center>
             
 			<div class="content-internal">
 
@@ -8,9 +6,9 @@
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
 
-								<header class="article-header">
+								<header class="title-header">
 
-									<h3 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+									<h3 class="h2"><?php the_title(); ?></h3>
 
 								</header> <!-- end article header -->
 
@@ -54,7 +52,5 @@
 							<?php endif; ?>
 
 			</div> <!-- end #content -->
-
-			</center>
 
 <?php get_footer(); ?>

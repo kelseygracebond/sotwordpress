@@ -1,12 +1,8 @@
-			<footer class="footer" role="contentinfo">
+			<footer class="footer">
 
-                <nav role="navigation">
-                        <?php bones_footer_links(); ?>
-                </nav>
-
-				<p>Stand Out Talent<br>
+				<p1>Stand Out Talent<br>
                    417 Vernon Street<br>
-                   Roseville, CA 95678<br></p>
+                   Roseville, CA 95678<br></p1>
 			
             </footer> <!-- end footer -->
 

@@ -808,9 +808,9 @@ a:hover, a:focus {
   .container {
     width: auto; }
 	
-  .content {
-	  margin-left:200px;
-	  margin-right:200px; }
+  #content {
+	  margin-left:100px;
+	  margin-right:100px; }
 
   .row-fluid {
     width: 100%; }

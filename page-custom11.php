@@ -12,36 +12,19 @@ Template Name: Events Page
             
 			<div id="content">
 
-							<?php if (have_posts() ) while (have_posts() ) : the_post(); ?>
+							<?php global $more ; $more = 0;
+							
+                            query_posts('cat=11'); if(have_posts()) : while(have_posts()) : the_post(); ?>
                             
-                            <h1><?php the_field('page_heading'); ?> </h1>
-
-                            <h3><?php the_field('page_description'); ?> </h3>
                             
-                            <img src="<?php the_field('page_image'); ?>" alt="" />
-
-                            <?php the_field('page_content'); ?>
+                          	<a href="<?php echo the_permalink(the_post_thumbnail);?>"> 
                             
-                            <?php endwhile;?>
+							<?php if ( the_post_thumbnail('thumb-175')):?> </a>
                             
-								<?php
-                                global $more;
-                                $more = 0;
-                                query_posts('cat=11');
-                                if(have_posts()) :
-                                while(have_posts()) :the_post();
-                                ?>
-                                
-								<?php if ( has_post_thumbnail() ) : ?> 
-                                   <a href="<?php the_permalink(); ?>" >
-                                   <?php the_post_thumbnail(); ?>
-                                   </a>
-                                 <?php endif; ?>
-                                                                 
-								<?php endwhile;
-                                endif;
-                                wp_reset_query();?>
-                                
+                            <?php endif; ?>
+                                                     
+                            <?php endwhile; endif; wp_reset_query();?>
+                             
             </div><!--end content-->
                         
             </center>
