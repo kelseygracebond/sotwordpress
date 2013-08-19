@@ -1,12 +1,48 @@
 <?php get_header(); ?>
-
-			<center>
             
 			<div class="content-internal">
+            
+							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
 
+								<header class="article-header">
+
+									<h3 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+
+								</header> <!-- end article header -->
+
+								<section class="entry-content clearfix">
+
+									<?php the_post_thumbnail( 'bones-thumb-300' ); ?>
+
+									<?php the_content(); ?>
+
+								</section> <!-- end article section -->
+
+							</article> <!-- end article -->
+                            
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
+<<<<<<< HEAD
 							
+=======
+							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
+
+								<header class="title-header">
+
+									<h3 class="h2"><?php the_title(); ?></h3>
+
+								</header> <!-- end article header -->
+
+								<section class="entry-content clearfix">
+
+									<?php the_post_thumbnail( 'bones-thumb-300' ); ?>
+
+									<?php the_content(); ?>
+
+								</section> <!-- end article section -->
+
+							</article> <!-- end article -->
+>>>>>>> cbf34cde132271f34c8fbd1e10dec2b0b3438443
 
 							<?php endwhile; ?>
 
@@ -38,7 +74,5 @@
 							<?php endif; ?>
 
 			</div> <!-- end #content -->
-
-			</center>
 
 <?php get_footer(); ?>

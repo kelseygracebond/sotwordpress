@@ -1,20 +1,13 @@
-			<footer class="footer" role="contentinfo">
+			<footer class="footer">
 
-				<div id="inner-footer" class="wrap clearfix">
-
-					<nav role="navigation">
-							<?php bones_footer_links(); ?>
-									</nav>
-
-					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>.</p>
-
-				</div> <!-- end #inner-footer -->
-
-			</footer> <!-- end footer -->
-
-		</div> <!-- end #container -->
+				<p1>Stand Out Talent<br>
+                   417 Vernon Street<br>
+                   Roseville, CA 95678<br></p1>
+			
+            </footer> <!-- end footer -->
 
 		<!-- all js scripts are loaded in library/bones.php -->
+        
 		<?php wp_footer(); ?>
 
 	</body>

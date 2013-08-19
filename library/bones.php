@@ -265,8 +265,6 @@ function bones_main_nav_fallback() {
 		'include'     => '',
 		'exclude'     => '',
 		'echo'        => true,
-        'link_before' => '',                            // before each link
-        'link_after' => ''                             // after each link
 	) );
 }
 

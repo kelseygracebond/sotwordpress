@@ -9,37 +9,24 @@ Template Name: Events Page
 <?php get_header(); ?>
 
 			<center>
-
-			<div id="content">
-                        												
-							<?php if (have_posts() ) while (have_posts() ) : the_post(); ?>
-                            
-                            <h1><?php the_field('page_heading'); ?> </h1>
-
-                            <h3><?php the_field('page_description'); ?> </h3>
-                            
-                            <img src="<?php the_field('page_image'); ?>" alt="" />
-                            
-                            <?php the_field('page_content'); ?>
-                            
-                            <?php endwhile;?>
-                            
-								<?php
-                                global $more;
-                                $more = 0;
-                                query_posts('cat=11');
-                                if(have_posts()) :
-                                while(have_posts()) :the_post();
-                                ?>
-                                <h2><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h2>
-                                <div><?php the_content('Read More') ?></div>
-                                <?php
-                                endwhile;
-                                endif;
-                                wp_reset_query();?>
-                                                            
-            </div> <!-- end #content -->
             
+			<div id="content">
+
+							<?php global $more ; $more = 0;
+							
+                            query_posts('cat=11'); if(have_posts()) : while(have_posts()) : the_post(); ?>
+                            
+                            
+                          	<a href="<?php echo the_permalink(the_post_thumbnail);?>"> 
+                            
+							<?php if ( the_post_thumbnail('thumb-175')):?> </a>
+                            
+                            <?php endif; ?>
+                                                     
+                            <?php endwhile; endif; wp_reset_query();?>
+                             
+            </div><!--end content-->
+                        
             </center>
             
             </body>
