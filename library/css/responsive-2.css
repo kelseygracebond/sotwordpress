@@ -1,0 +1,9 @@
+@charset "UTF-8";
+/*Responsive CSS Document */
+
+@media (max-width: 480px) {
+
+.content-internal {
+	margin-left:0;
+	margin-right:0;
+	width:100%; }

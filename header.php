@@ -50,9 +50,9 @@
             	
                     <ul><?php if ( is_single() || is_home() ) ?><a href="<?php echo bloginfo('url'); ?>">events</a>
                     
-                    <a href="http://localhost/standouttalent/category/about">about</a>
+                    <a href="http://localhost/standouttalent/about">about</a>
                     
-                    <a href="index.php"><img src="<?php echo get_template_directory_uri();?>/images/logo.png" style="height:100px;"/></a>
+                    <a href="http://localhost/standouttalent"><img src="<?php echo get_template_directory_uri();?>/images/logo.png" style="height:100px;"/></a>
 
                     <a href="http://localhost/standouttalent/category/support">support</a>
                     

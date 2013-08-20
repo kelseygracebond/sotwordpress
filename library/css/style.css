@@ -780,39 +780,9 @@ body {
   font-size: 100%;
   line-height: 1.5;
   color: #565656; }
-
-  .row-fluid {
-    width: 100%;
-    *zoom: 1; }
-
-  .row-fluid:before, .row-fluid:after {
-    display: table;
-    content: "";
-    line-height: 0; }
-
-  .row-fluid:after {
-    clear: both; }
-
-  .row-fluid [class*="span"] {
-    display: block;
-    width: 100%;
-    min-height: 30px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    float: left;
-    margin-left: 2.7624309392265%;
-    *margin-left: 2.7092394498648%; }
-
-  .row-fluid [class*="span"]:first-child {
-    margin-left: 0; }
-
-  .row-fluid .controls-row [class*="span"] + [class*="span"] {
-    margin-left: 2.7624309392265%; }
-
-  .row-fluid .span3 {
-    width: 22.92817679558%;
-    *width: 22.874985306218%; }
+  
+.clear {
+	clear:both; }  
 
 /********************
 02. WORDPRESS BODY CLASSES
@@ -902,10 +872,9 @@ h4,
 .h4,
 h5,
 .h5 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family:MetaPro-Bold;
   text-rendering: optimizelegibility;
-  font-weight: 400;
-  /*
+   /*
 	if you're going to use webfonts, be sure to check your weights
 	http://css-tricks.com/watch-your-font-weight/
 	*/
@@ -932,9 +901,12 @@ h1,
 }
 h2,
 .h2 {
-  font-size: 1.75em;
+  font-size:30px;
   line-height: 1.4em;
   margin-bottom: 0.375em;
+  clear:both;
+  padding-top: 20px;
+  border-top: 0.5px solid #999999;
 }
 h3,
 .h3 {
@@ -996,7 +968,7 @@ and more scalable.
 		*/
 
 }
-.nav ul a {
+.nav  {
   display: block;
   text-decoration: none;
   padding: 10px 10px;
@@ -1017,10 +989,10 @@ and more scalable.
 
 ul a {
 	text-decoration:none;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family:MetaPro-Book;
 	color:#999;
 	text-transform:uppercase;
-	font-size:12px;
+	font-size:14px;
 	padding:15px; }
 
 ul {
@@ -1045,10 +1017,12 @@ ul {
 	padding-bottom:20px; }
 
 p {
-	font-family:Arial, Helvetica, sans-serif;
+	font-family:"Chaparral Pro";
 	font-size:14px;
 	color:#999;
-	line-height:25px; }
+	line-height:25px;
+	clear:both;
+	padding-bottom:15px; }
 
 p1 {
 	font-family:Arial, Helvetica, sans-serif;
@@ -1062,6 +1036,31 @@ p1 {
 	text-transform:uppercase;
 	color:#099;
 	margin-bottom: -12px; }  
+	
+#post-21 {
+	width:50%;
+	float:left;
+	padding-right:7px; }
+	
+#post-21 .h2 {
+	border-top:none; }
+
+#post-146 {
+	width:50%;
+	float:right;
+	padding-left:7px; }
+	
+#post-146 .h2 {
+	border-top:none; }
+
+#post-153 .h2 {
+	border-top:none; }
+	
+.home-image {
+	padding-bottom:15px;
+	width:100%; }
+
+
 
 /* end .hentry */
 /* want to style individual post classes? Booya! */
@@ -1079,7 +1078,8 @@ p1 {
 }
 /* entry content */
 .entry-content {
-	border-bottom:#999 solid 0.5px; }
+	border-top:#999 solid 0.5px;
+	padding-top:20px; }
 
 .entry-content dd {
   margin-left: 0;
@@ -1635,6 +1635,10 @@ you can add resource intensive styles.
     /* end current highlighters */
   
   }
+  
+  .home-event {
+	  text-decoration:none; }
+  
   .nav li {
     float: left;
     position: relative;
@@ -1878,3 +1882,48 @@ be set to display none.
   nav {
     display: none;
   } }
+  
+  @media (max-width: 480px) {
+
+.content-internal {
+	margin-left:0;
+	margin-right:0;
+	width:100%;
+	padding:0; } 
+
+#content {
+	margin-left:0;
+	margin-right:0;
+	width:100%;
+	padding:0; } 
+
+	
+#post-21 {
+	width:100%;
+}
+
+#post-146 {
+	width:100%;
+} 
+
+.home-image {
+	width:100%; }
+
+}
+
+@media only screen and (max-width: 768px){
+
+.content-internal {
+	margin-left:0;
+	margin-right:0;
+	padding-left:10px;
+	padding-right:10px;
+	width:100%; }
+	
+#content {
+	margin-left:0;
+	margin-right:0;
+	width:100%; }
+
+
+}
