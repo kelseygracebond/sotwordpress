@@ -52,16 +52,18 @@
                     
                     <a href="http://localhost/standouttalent/about">about</a>
                     
-                    <a href="http://localhost/standouttalent"><img src="<?php echo get_template_directory_uri();?>/images/logo.png" style="height:100px;"/></a>
-
                     <a href="http://localhost/standouttalent/category/support">support</a>
                     
-                    <a href="http://localhost/standouttalent/category/blog">blog</a></ul>
+                    <a href="http://localhost/standouttalent"><img src="<?php echo get_template_directory_uri();?>/images/logo.png" style="height:100px;"/></a>
+
+                    <a href="http://localhost/standouttalent/category/venue">venue</a>
+                    
+                    <a href="http://localhost/standouttalent/category/blog">blog</a>
                    
                     
-                     <div class="icons"><a href="https://www.facebook.com/StandOutTalent.Org" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/fb.png" style="height:20px;"/></a>
+                     <a href="https://www.facebook.com/StandOutTalent.Org" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/fb.png" style="height:20px;"/></a>
                      
-    				 <a href="https://twitter.com/StandOutTalent" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/tw.png" style="height:20px;"/></a></div><!--end icons-->
+    				 <a href="https://twitter.com/StandOutTalent" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/tw.png" style="height:20px;"/></a></ul>
                      
                      </div><!--end inner-header-->
                         
