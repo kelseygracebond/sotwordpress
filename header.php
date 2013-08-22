@@ -59,11 +59,15 @@
                     <a href="http://localhost/standouttalent/category/venue">venue</a>
                     
                     <a href="http://localhost/standouttalent/category/blog">blog</a>
-                   
                     
-                     <a href="https://www.facebook.com/StandOutTalent.Org" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/fb.png" style="height:20px;"/></a>
+                    <a href="http://localhost/standouttalent/category/group">performing</a></ul>
+
+                   
+                     <div class="icons"><a href="https://www.facebook.com/StandOutTalent.Org" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/fb.png" style="height:20px;"/></a>
                      
-    				 <a href="https://twitter.com/StandOutTalent" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/tw.png" style="height:20px;"/></a></ul>
+    				 <a href="https://twitter.com/StandOutTalent" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/tw.png" style="height:20px;"/></a>
+                     
+      				 <a href="http://instagram.com/standouttalent" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/in.png" style="height:20px;"/></a></div>
                      
                      </div><!--end inner-header-->
                         

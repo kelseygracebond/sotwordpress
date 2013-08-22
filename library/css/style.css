@@ -1017,14 +1017,7 @@ p {
 	font-size:14px;
 	color:#999;
 	line-height:25px;
-	clear:both;
-	padding-bottom:15px; }
-
-p1 {
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:12px;
-	color:#999;
-	line-height:20px; }
+	clear:both; }
 
 .title-header {
 	background-color:#FFF;
@@ -1039,7 +1032,10 @@ p1 {
 	padding-right:7px; }
 	
 #post-21 .h2 {
-	border-top:none; }
+	border-top:none;
+	font-size:0px;
+	margin-top:30px; }
+
 
 #post-146 {
 	width:50%;
@@ -1047,17 +1043,51 @@ p1 {
 	padding-left:7px; }
 	
 #post-146 .h2 {
-	border-top:none; }
+	border-top:none;
+	font-size:0px;
+	margin-top:30px; }
 
 #post-153 .h2 {
-	border-top:none; }
-	
+	border-top:none;	
+	font-size:0px;
+	margin-top:30px; }
+
 .home-image {
 	padding-bottom:15px;
 	width:100%; }
+	
+#content a:hover {
+	opacity:0.4; }
+	
+p1 {
+	font-family:MetaPro-Book;
+	font-size:14px; }
 
 
-
+p2 {
+	font-family:MetaPro-Black;
+	font-size:15px;
+	color:#099;
+	text-transform:uppercase;
+	font-style:italic; }
+	
+p3 {
+	font-family:MetaPro-Black;
+	font-size:30px;
+	color:#099;
+	text-transform:uppercase;
+	line-height:35px;
+	margin-top:30px; }
+	
+	
+.icons {
+	float:right;
+	margin-top:-40px;
+	margin-bottom:-5px;
+	margin-right:5px;
+	clear:both; }
+	
+	
 /* end .hentry */
 /* want to style individual post classes? Booya! */
 /* post by id (i.e. post-3) */
@@ -1632,12 +1662,12 @@ you can add resource intensive styles.
   
   }
   
-  .home-event {
-	  text-decoration:none; }
+.home-event {
+	text-decoration:none; }
   
-  .nav li {
-    float: left;
-    position: relative;
+.nav li {
+	float: left;
+	position: relative;
     /*
   		plan your menus and drop-downs wisely.
   		*/
