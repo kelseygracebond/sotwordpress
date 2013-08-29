@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: About Page
+Template Name: Blog Page
 */
 ?>
 
@@ -12,11 +12,11 @@ Template Name: About Page
                 
         <?php
 		
-        query_posts('cat=4'); 
+        query_posts('cat=3'); 
 		
 		if(have_posts()) : while(have_posts()) : the_post(); ?>
                    
-							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
+							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article"> 								
                             
 								<header class="title-header">
 
@@ -29,8 +29,14 @@ Template Name: About Page
 									<?php the_post_thumbnail( 'bones-thumb-300' ); ?>
 
 									<?php the_content(); ?>
-
-								</section> <!-- end article section -->
+ 
+                                    <h7>Written By:</h7> <h8><?php the_author(); ?></h8>
+                                    
+                                    <br><h7>On:</h7> <h8><?php the_time('F jS, Y') ?></h8>
+                                    
+                                    <?php get_comments_template(); ?>
+                                                                        								
+                                </section> <!-- end article section -->
 
 							</article> <!-- end article -->
 

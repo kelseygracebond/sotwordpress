@@ -19,25 +19,11 @@ The comments page for Bones
 <!-- You can start editing here. -->
 
 <?php if ( have_comments() ) : ?>
-	<h3 id="comments" class="h2"><?php comments_number(__('<span>No</span> Responses', 'bonestheme'), __('<span>One</span> Response', 'bonestheme'), _n('<span>%</span> Response', '<span>%</span> Responses', get_comments_number(),'bonestheme') );?> to &#8220;<?php the_title(); ?>&#8221;</h3>
+	<h3 id="comments" class="h2 respond-form">Responses</h3>
 
-	<nav id="comment-nav">
-		<ul class="clearfix">
-				<li><?php previous_comments_link() ?></li>
-				<li><?php next_comments_link() ?></li>
-		</ul>
-	</nav>
-
-	<ol class="commentlist">
+	<ol class="commentlist respond-form">
 		<?php wp_list_comments('type=comment&callback=bones_comments'); ?>
 	</ol>
-
-	<nav id="comment-nav">
-		<ul class="clearfix">
-				<li><?php previous_comments_link() ?></li>
-				<li><?php next_comments_link() ?></li>
-		</ul>
-	</nav>
 
 	<?php else : // this is displayed if there are no comments so far ?>
 
@@ -91,11 +77,6 @@ The comments page for Bones
 			<small><?php _e("(will not be published)", "bonestheme"); ?></small>
 		</li>
 
-		<li>
-			<label for="url"><?php _e("Website", "bonestheme"); ?></label>
-			<input type="url" name="url" id="url" value="<?php echo esc_attr($comment_author_url); ?>" placeholder="<?php _e('Got a website?', 'bonestheme'); ?>" tabindex="3" />
-		</li>
-
 	</ul>
 
 	<?php endif; ?>
@@ -107,9 +88,6 @@ The comments page for Bones
 		<?php comment_id_fields(); ?>
 	</p>
 
-	<div class="alert alert-info">
-		<p id="allowed_tags" class="small"><strong>XHTML:</strong> <?php _e('You can use these tags', 'bonestheme'); ?>: <code><?php echo allowed_tags(); ?></code></p>
-	</div>
 
 	<?php do_action('comment_form', $post->ID); ?>
 

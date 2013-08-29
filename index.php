@@ -58,6 +58,9 @@
 										</footer>
 									</article>
 
+
+<?php $withcomments = 1; ?>
+<?php comments_template(); ?>
 							<?php endif; ?>
 
 						</div> <!-- end #main -->

@@ -8,35 +8,62 @@ Template Name: Events Page
 
 <?php get_header(); ?>
 
-			<center>
+	<center>
             
-			<div id="content">
+		<div id="content">
             
-            <div class="home-image">
+                <div class="home-image">
             
-					<?php
-                    $post_id = 190;
-                    $queried_post = get_post($post_id);
-                    echo $queried_post->post_content; 
-                    ?>
-                    
-            </div><!--end home-image-->
-            
-							<?php
-                            query_posts('cat=11'); if(have_posts()) : while(have_posts()) : the_post(); ?>
-                                <a class="home-event" href="<?php echo the_permalink();?>"> 
-                                <?php the_post_thumbnail('thumb-175'); ?> 
+						<?php
+                        query_posts('cat=16'); if(have_posts()) : while(have_posts()) : the_post(); ?>
+                      
+                            <div class="event">
+                                                    
+                                <a href="<?php echo the_permalink();?>">                                
+								<?php the_post_thumbnail('upcoming'); ?>  
+                                <div class="hover-text"><?php the_title();?>:                                <?php the_field('date_&_times'); ?>
+                              
+                                <?php echo'<a href="http://www.brownpapertickets.com/browse.html?formsubmitted=1&reset=1&secretkeywords=&keywords=Tower+Theater+Roseville" target="_blank">';?>
+                                <img src="<?php echo get_template_directory_uri();?>/images/ticket.jpg" style="height:50px; width:auto;"/></a>
+</div>  <!--end hover-text--></a>
+                                
+                                            
+                            </div><!--end event-->
+                                                            
+                        <?php 
+                        endwhile; 
+                        endif; 
+                        wp_reset_query(); ?> 
+
+            	</div><!--end home-image-->
+                
+			
+            	<div class="events">           
+
+						<?php
+                        query_posts('cat=11'); if(have_posts()) : while(have_posts()) : the_post(); ?>
+                            
+                            <div class="event">
+                                                    
+                                <a href="<?php echo the_permalink();?>">
+                                    <?php the_post_thumbnail('thumb-175'); ?>
+                                    <div class="hover-text"><?php the_title();?>:                                    <?php the_field('date_&_times'); ?>
+</div><!--end hover-text-->
                                 </a>
-                            <?php 
-							endwhile; 
-							endif; 
-							wp_reset_query();
-							?>
-                             
-            </div><!--end content-->
+                            
+                            </div><!--end event-->
+                                                            
+						<?php 
+                        endwhile; 
+                        endif; 
+                        wp_reset_query(); ?> 
                         
-            </center>
+				</div><!--end events-->
+
+		</div><!--end content-->
+
+	</center>
             
-            </body>
+</body>
 
 <?php get_footer(); ?>

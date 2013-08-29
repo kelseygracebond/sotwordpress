@@ -106,3 +106,14 @@ jQuery(document).ready(function($) {
 	w.addEventListener( "orientationchange", restoreZoom, false );
 	w.addEventListener( "devicemotion", checkTilt, false );
 })( this );
+
+
+ /***********************************/
+	/********hover state********/
+   /***********************************/
+
+$('#content').hover(function(){
+        $('.home-event').animate({width: '90px'}, 1000)
+    }, function(){
+        $('.home-event').animate({width: '0'}, 1000)
+    });
