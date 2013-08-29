@@ -24,7 +24,11 @@ Template Name: Events Page
                                 <div class="hover-text"><?php the_title();?>:                                <?php the_field('date_&_times'); ?>
                               
                                 <?php echo'<a href="http://www.brownpapertickets.com/browse.html?formsubmitted=1&reset=1&secretkeywords=&keywords=Tower+Theater+Roseville" target="_blank">';?>
-                                <img src="<?php echo get_template_directory_uri();?>/images/ticket.jpg" style="height:50px; width:auto;"/></a>
+                                <img src="<?php echo get_template_directory_uri();?>/images/ticket_normal.png" style="height:50px; width:auto;"
+                        		onmouseover="this.src='<?php echo get_template_directory_uri();?>/images/ticket_hover.png'"
+								onmouseout="this.src='<?php echo get_template_directory_uri();?>/images/ticket_normal.png'"
+                                onClick="this.src='<?php echo get_template_directory_uri();?>/images/ticket_pressed.png'"
+                                /></a>
 </div>  <!--end hover-text--></a>
                                 
                                             

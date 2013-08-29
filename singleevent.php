@@ -29,17 +29,17 @@
                                     
                                     <?php echo'<a href="http://www.brownpapertickets.com/browse.html?formsubmitted=1&reset=1&secretkeywords=&keywords=Tower+Theater+Roseville" target="_blank" />';?><img src="<?php echo get_template_directory_uri();?>/images/ticket_normal.png" style="height:50px; width:auto;"
                                 onmouseover="this.src='<?php echo get_template_directory_uri();?>/images/ticket_hover.png'"
-								onmouseout="this.src='<?php echo get_template_directory_uri();?>/images/ticket_normal.png'" /></a><br>
-                                
+								onmouseout="this.src='<?php echo get_template_directory_uri();?>/images/ticket_normal.png'" 
+                        onClick="this.src='<?php echo get_template_directory_uri();?>/images/ticket_pressed.png'"
+                                /></a><br>
                                                                                                
 								</div><!--end eventinfo-->
                                 
                                     <p><?php the_field('auditions'); ?></p>
                                     
-									<p><?php the_field('reviews'); ?></p>                                   
+									<p5><?php the_field('reviews'); ?></p5>                                   
 
-                                    <p>View Similar <?php the_tags(); ?></p>
-
+                                    <p>View Similar <p5><?php the_tags(); ?></p5></p>
 
 							</article> <!-- end article -->
 

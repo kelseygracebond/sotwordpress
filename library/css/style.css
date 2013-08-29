@@ -82,7 +82,9 @@ button,
 input,
 select,
 textarea {
-  font-family: sans-serif;
+  font-family:MetaPro-Normal;
+  font-size:14px;
+  color:#9dcacb;
 }
 /*
  * Addresses margins handled incorrectly in IE6/7.
@@ -139,19 +141,6 @@ h5 {
 h6 {
   font-size: 0.75em;
   margin: 2.33em 0;
-}
-
-h7 {
-	font-family:"Chaparral Pro";
-	font-size:14px;
-	color:#999;
-}
-
-h8 {
-	font-family:"Chaparral Pro";
-	font-size:14px;
-	text-transform:uppercase;
-	color:#999;
 }
 
 h9 {
@@ -457,6 +446,11 @@ textarea {
 
   vertical-align: baseline;
   *vertical-align: middle;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	background-color:#464445;
+	border:#464445;
+	padding:7px;
   /* 3 */
 
 }
@@ -1138,6 +1132,11 @@ p {
 	line-height:25px;
 	clear:both;
 	letter-spacing:0.5px; }
+	
+.content-internal p5 a {
+	color:#e86455;
+    font-family: "Chaparral Pro";
+}
 
 .title-header {
 	background-color:#333132;

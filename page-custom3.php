@@ -22,9 +22,9 @@ Template Name: Blog Page
 
 									<a href="<?php echo the_permalink();?>"><h3 class="h2"><?php the_title(); ?></h3></a>
                                     
-                                    <h7>Written By:</h7> <h8><?php the_author(); ?></h8>
+                                 	<p2>Written By: <?php the_author(); ?>
                                     
-                                    <br><h7>On:</h7> <h8><?php the_time('F jS, Y') ?></h8>
+                                    <br>On: <?php the_time('F jS, Y') ?></p2>
 
 								</header> <!-- end article header -->
 

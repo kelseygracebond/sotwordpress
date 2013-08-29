@@ -8,21 +8,32 @@
                       
                       
                     	<li><a href="https://google.com" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/snap_qpon_normal.png" style="height:20px;"
-                        onmouseover="this.src='<?php echo get_template_directory_uri();?>/images/ticket_hover.png'"
-						onmouseout="this.src='<?php echo get_template_directory_uri();?>/images/ticket_normal.png'"
+                        onmouseover="this.src='<?php echo get_template_directory_uri();?>/images/snap_qpon_hover.png'"
+						onmouseout="this.src='<?php echo get_template_directory_uri();?>/images/snap_qpon_normal.png'"
+                        onClick="this.src='<?php echo get_template_directory_uri();?>/images/snap_qpon_pressed.png'"
                         /></a></li>
                         
                         
                     	<li><a href="https://instagram.com/standouttalent" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/instagram_normal.png" style="height:20px;"
-                        onmouseover="this.src='<?php echo get_template_directory_uri();?>/images/ticket_hover.png'"
-						onmouseout="this.src='<?php echo get_template_directory_uri();?>/images/ticket_normal.png'"
+                        onmouseover="this.src='<?php echo get_template_directory_uri();?>/images/instagram_hover.png'"
+						onmouseout="this.src='<?php echo get_template_directory_uri();?>/images/instagram_normal.png'"
+                        onClick="this.src='<?php echo get_template_directory_uri();?>/images/instagram_pressed.png'"
                         /></a></li>
                         
                         
-   					 <li><a href="https://twitter.com/StandOutTalent" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/twitter_normal.png" style="height:20px;"/></a></li>
+   					 <li><a href="https://twitter.com/StandOutTalent" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/twitter_normal.png" style="height:20px;"
+                        onmouseover="this.src='<?php echo get_template_directory_uri();?>/images/twitter_hover.png'"
+						onmouseout="this.src='<?php echo get_template_directory_uri();?>/images/twitter_normal.png'"
+                        onClick="this.src='<?php echo get_template_directory_uri();?>/images/twitter_pressed.png'"
+                     	/></a></li>
                      
                      
-   					 <li><a href="https://www.facebook.com/StandOutTalent.Org" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/facebook_normal.png" style="height:20px;"/></a></li>
+   					 <li><a href="https://www.facebook.com/StandOutTalent.Org" target="_blank"><img src="<?php echo get_template_directory_uri();?>/images/facebook_normal.png" style="height:20px;"
+                        onmouseover="this.src='<?php echo get_template_directory_uri();?>/images/facebook_hover.png'"
+						onmouseout="this.src='<?php echo get_template_directory_uri();?>/images/facebook_normal.png'"
+                        onClick="this.src='<?php echo get_template_directory_uri();?>/images/facebook_pressed.png'"
+                     	/></a></li>
+
                      
                      
                 	</ul></div>

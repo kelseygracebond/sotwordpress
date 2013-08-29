@@ -10,9 +10,9 @@
 
 									<h3 class="h2"><?php the_title(); ?></h3>
                                     
-                                    <h7>Written By:</h7> <h8><?php the_author(); ?></h8>
+                                    <p2>Written By: <?php the_author(); ?>
                                     
-                                    <br><h7>On:</h7> <h8><?php the_time('F jS, Y') ?></h8>
+                                    <br>On: <?php the_time('F jS, Y') ?></p2>
                                     
 								</header> <!-- end article header -->
 
@@ -20,7 +20,7 @@
 
 									<?php the_content(); ?>
                                     
-                                    <p>View Similar <?php the_tags(); ?></p>
+                                    <p>View Similar <p5><?php the_tags(); ?></p5></p>
             						
 								</section> <!-- end article section -->
                                 
